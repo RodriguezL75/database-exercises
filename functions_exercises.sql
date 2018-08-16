@@ -23,6 +23,9 @@ SELECT *, CONCAT('Days at company: ', DATEDIFF(NOW(), hire_date)) FROM employees
 AND birth_date LIKE '%12-25'
 ORDER BY birth_date ASC, hire_date DESC;
 
+-- using aliases
+select concat_ws(',', first_name, last_name, emp_no, hire_date) AS myResult from employees AS emp WHERE emp.emp_no> 20000
+
 
 
 
