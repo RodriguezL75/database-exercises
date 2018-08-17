@@ -12,3 +12,16 @@ SELECT name from albums WHERE release_date BETWEEN 1990 and 1999;
 SELECT name from albums WHERE sales < 20;
 SELECT name from albums WHERE genre like '% rock%';
 
+SELECT artist from albums WHERE name = 'Michael Jackson';
+
+UPDATE albums
+SET sales = (sales * 10);
+
+UPDATE albums
+SET release_date = 1880;
+
+UPDATE albmus
+SET artist = "Peter Jackson"
+WHERE artist = "Michael Jackson";
+
+
